@@ -8,8 +8,8 @@ In this project we are creating some methods to decode morse message
 
 ## Built with
 
--
--
+- IRB
+- `Ruby`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
