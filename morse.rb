@@ -30,7 +30,7 @@ def decode_char(char)
   letter_code[char]
 end
 
-# words => letter 
+# words => letter
 def decode_words(word)
   translated_word = ''
 
@@ -46,10 +46,10 @@ def decode_str(str)
   decode_msg = ''
 
   words_arr.each_with_index do |words, i|
-    if i == 0
-      decode_msg << "#{decode_words(words)}"
-    else 
-      decode_msg << " #{decode_words(words)}"
+    if i.zero?
+      decode_msg << ' ' + decode_words(words)
+    else
+      decode_msg << decode_words(words)
     end
   end
 
@@ -58,15 +58,3 @@ end
 
 decode_str('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 # => "a box full of rubies"
-
-
-#Alternative Solution for strings => words
-# # words => strings 
-#  def split_message(message)
-#   splited_message = message.split('   ')
-#   decode_message = ''
-
-#   splited_message.each { |word| decode_message += "#{decode_word(word)} " }
-
-#   decode_message
-# end
