@@ -29,3 +29,14 @@ def decode_char (char)
  }
  puts letter_code[char]
 end
+
+
+# words => strings 
+
+def decode_word (str)
+    str.word = str.split
+    return (/   /)
+
+    
+
+# codes => str
