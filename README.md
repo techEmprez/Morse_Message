@@ -8,8 +8,8 @@ In this project we are creating some methods to decode morse message
 
 ## Built with
 
--
--
+- ![](https://img.shields.io/badge/Github-blueviolet)
+- ![](https://img.shields.io/badge/Ruby-red)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
