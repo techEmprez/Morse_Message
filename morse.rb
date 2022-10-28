@@ -47,8 +47,9 @@ def decode_str(str)
 
   words_arr.each_with_index do |words, i|
     if i.zero?
-      decode_msg << ' ' + decode_words(words)
+      decode_msg << decode_words(words)
     else
+      decode_msg << ' ' 
       decode_msg << decode_words(words)
     end
   end
